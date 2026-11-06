@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aly Hegazy</title>
+<meta name="description" content="Aly Hegazy — CS and Math student at CUNY College of Staten Island building data pipelines and backend systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --text: #1c1917;
+    --muted: #57534e;
+    --faint: #a8a29e;
+    --border: #e7e5e4;
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --sans: "Inter", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0a09;
+      --surface: #1c1917;
+      --text: #f5f5f4;
+      --muted: #a8a29e;
+      --faint: #78716c;
+      --border: #292524;
+      --accent: #2dd4bf;
+      --accent-soft: #134e4a;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 72px 24px 96px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin-top: 8px; max-width: 560px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .links a {
+    font-family: var(--mono); font-size: 0.85rem;
+    border: 1px solid var(--border); background: var(--surface);
+    padding: 6px 12px; border-radius: 6px; color: var(--text);
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+  .links a.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .links a.primary:hover { opacity: 0.9; color: var(--bg); }
+
+  section { margin-top: 64px; }
+  h2 {
+    font-family: var(--mono); font-size: 0.8rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--faint);
+    margin-bottom: 20px;
+  }
+
+  .project {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 24px; margin-bottom: 16px;
+  }
+  .project-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .project h3 { font-size: 1.1rem; font-weight: 600; }
+  .date { font-family: var(--mono); font-size: 0.8rem; color: var(--faint); white-space: nowrap; }
+  .context { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
+  .project ul { margin: 14px 0 0 18px; color: var(--muted); }
+  .project li { margin-bottom: 6px; }
+  .project li strong { color: var(--text); font-weight: 500; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+  .tag {
+    font-family: var(--mono); font-size: 0.75rem;
+    background: var(--accent-soft); color: var(--accent);
+    padding: 3px 8px; border-radius: 4px;
+  }
+  .project .repo { display: inline-block; margin-top: 14px; font-family: var(--mono); font-size: 0.85rem; }
+
+  .item { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; margin-bottom: 22px; }
+  .item h3 { font-size: 1rem; font-weight: 600; }
+  .item .role { color: var(--muted); font-size: 0.95rem; grid-column: 1 / -1; }
+  .item p { color: var(--muted); font-size: 0.95rem; grid-column: 1 / -1; margin-top: 4px; }
+
+  .skills { display: grid; grid-template-columns: 110px 1fr; gap: 10px 16px; font-size: 0.95rem; }
+  .skills dt { font-family: var(--mono); font-size: 0.8rem; color: var(--faint); padding-top: 2px; }
+  .skills dd { color: var(--muted); }
+
+  footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--faint); font-size: 0.85rem; }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 48px 16px 72px; }
+    header h1 { font-size: 2rem; }
+    .skills { grid-template-columns: 1fr; gap: 2px; }
+    .skills dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Aly Hegazy</h1>
+    <p class="tagline">Computer Science and Mathematics student at CUNY College of Staten Island. I build data pipelines and backend systems on large, messy, real-world datasets.</p>
+    <div class="links">
+      <a class="primary" href="resume.pdf">Resume</a>
+      <a href="https://github.com/aly-hegazy1">GitHub</a>
+      <a href="https://linkedin.com/in/aly-hegazy1">LinkedIn</a>
+      <a href="mailto:aly.hegazy2006@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>Severity-Adjusted Hospital Benchmarking</h3>
+        <span class="date">Sep 2026 – Present</span>
+      </div>
+      <p class="context">Independent study · NY State SPARCS discharge data</p>
+      <ul>
+        <li>Building a <strong>PySpark and SQL pipeline</strong> to ingest and clean New York State's public hospital discharge data (<strong>2M+ inpatient stays per year</strong>), scaling from one year to multiple years with automated data-quality checks.</li>
+        <li>Modeling expected length of stay and cost per admission from diagnosis group and severity of illness to set a risk-adjusted baseline for every hospital.</li>
+        <li>Comparing each hospital's observed outcomes to expected, adjusting for low-volume hospitals, and presenting results in a dashboard and written report.</li>
+      </ul>
+      <div class="tags"><span class="tag">PySpark</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Data quality</span></div>
+      <!-- TODO: replace with the project's repo link -->
+      <a class="repo" href="https://github.com/aly-hegazy1">View on GitHub →</a>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>Kalshi Market-Making &amp; Adverse Selection Analysis</h3>
+        <span class="date">Sep 2026 – Present</span>
+      </div>
+      <p class="context">CUNY Tech Prep, Data Science Track · Team of 5</p>
+      <ul>
+        <li>Built a <strong>24/7 order-book collector</strong> recording the full book across ~250 markets in 14 categories (<strong>~2.2 GB/day</strong>), matching Kalshi's own quotes 97.9% of the time.</li>
+        <li>Measuring adverse selection as effective minus realized spread, with markouts from 5 seconds to 5 minutes, using <strong>point-in-time joins</strong> to prevent look-ahead bias.</li>
+        <li>Building a gradient-boosting model to predict toxic order flow and backtesting quoting strategies against naive and Avellaneda-Stoikov baselines. Presenting findings at LinkedIn NYC in December 2026.</li>
+      </ul>
+      <div class="tags"><span class="tag">Python</span><span class="tag">DuckDB</span><span class="tag">Data ingestion</span><span class="tag">scikit-learn</span></div>
+      <!-- TODO: replace with the project's repo link -->
+      <a class="repo" href="https://github.com/aly-hegazy1">View on GitHub →</a>
+    </article>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="item">
+      <h3>Unadat</h3>
+      <span class="date">Mar 2026 – May 2026</span>
+      <span class="role">Software Engineering Intern · New York, NY</span>
+      <p>Co-developed ticketing, notification, and scoring systems for business clients in PHP, JavaScript, and MySQL with a team of 10 engineers over 7 sprints. Rebuilt the mobile layout of the Chores feature and found 6 bugs through cross-device testing.</p>
+    </div>
+
+    <div class="item">
+      <h3>Google</h3>
+      <span class="date">Jun 2026 – Present</span>
+      <span class="role">Mentee, Virtual Software Engineering Program (V-SWEP)</span>
+      <p>Selected for Google's competitive mentorship program for CS students and paired 1:1 with a Google software engineer. Returned for the Fall 2026 session.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <h3>CUNY College of Staten Island</h3>
+      <span class="date">Expected May 2027</span>
+      <span class="role">B.S. in Computer Science and Mathematics · GPA 3.7</span>
+      <p>Data Structures, Data Science, Practical Machine Learning, Probability and Statistics, Computational Linear Algebra, Real Analysis.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Python, SQL, JavaScript, PHP, C/C++, HTML/CSS</dd>
+      <dt>Data</dt><dd>PySpark, DuckDB, pandas, NumPy, scikit-learn, Matplotlib, Jupyter</dd>
+      <dt>Statistics</dt><dd>Regression, classification, hypothesis testing, statistical modeling</dd>
+      <dt>Tools</dt><dd>Git, GitHub, MySQL, REST APIs</dd>
+    </dl>
+  </section>
+
+  <footer>© 2026 Aly Hegazy</footer>
+
+</div>
+</body>
+</html>
